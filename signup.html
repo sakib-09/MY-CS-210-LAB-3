@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS215 Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header id="header-auth">
+            <h1>My Login History</h1>
+        </header>
+        <main id="main-center">
+            <form class="auth-form"action="loginHistory.html" method="post" enctype="multipart/form-data">
+                <!-- When you style this div, the form will change from single to two column -->
+                <!-- one HTML element or text node to a grid cell - each row needs two items -->
+                <div class="form-input-grid">
+
+                    <!-- Sample Form input: First Name (fname) -->
+                    <!-- Row 1 - label and input-->
+                    <label for="fname">First Name</label>      
+                    <input type="text" id="fname" name="fname" />   
+
+                    <!-- Row 2 - placeholder blank for first column, empty div for error messages -->
+                    &nbsp;  
+                     <div id="err-fname"></div> 
+
+                    <!-- HTML TO DO 1: add rows for last name (lname) -->
+
+                     <label for ="lname">Last Name</label>
+                     <input type ="text" id="lname" name="lname" />
+                      &nbsp;
+                    <div id="err-lname"></div>
+
+                    <!-- HTML TO DO 2: add rows for Username (uname) -->
+                     <label for ="uname">Username</label>
+                     <input type ="text" id="uname" name="uname" />
+                      &nbsp;
+                    <div id="err-uname"></div>
+                   
+                    <!-- HTML TO DO 3: add rows for Password (password)-->
+                     <label for ="password">Password</label>
+                     <input type ="password" id="password" name="password" />
+                      &nbsp;
+                    <div id="err-password"></div>
+
+                    <!-- HTML TO DO 4: add rows for Confirm Password (cpassword)-->
+                    <label for ="cpassword">Confirm Password</label>
+                     <input type ="password" id="cpassword" name="cpassword" />
+                      &nbsp;
+                    <div id="err-cpassword"></div>
+                    <!-- HTML TO DO 5: add rows for Date of Birth (dob)) -->
+                      <label for ="dob">Date Of Birth</label>
+                     <input type ="date" id="dob" name="dob" />
+                      &nbsp;
+                    <div id="err-dob"></div>
+                    
+                    <!-- HTML TO DO 6: add rows for Profile Picture (profilephoto)-->
+                       <label for ="profilephoto">Profile Picture</label>
+                     <input type ="file" id="profilephoto" name="profilephoto" />
+                      &nbsp;
+                    <div id="err-profilephoto"></div>
+                </div>
+
+                <div class="align-right">
+                    <!-- HTML TO DO 7: add a form submit button
+                                      Be sure the form has the correct attribute
+                                      to redirect users to the next page 
+                    -->
+                 <input type = "submit" value ="Create Account" />
+
+                </div>
+            </form>
+            <div class="form-note">
+                <!-- HTML TO DO 8: Add link to login page -->
+
+             <a href="login.html">Already havw an account? Login here</a>
+
+            </div>
+        </main>
+        <footer id="footer-auth">
+            <p class="footer-text">CS 215: Lab 3 Solution</p>
+        </footer>
+    </div>
+</body>
+
+</html>

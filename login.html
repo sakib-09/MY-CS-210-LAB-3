@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS215 Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header id="header-auth">
+            <h1>My Login History</h1>
+        </header>
+        <main id="main-center">
+
+            <!-- HTML TO DO 1: give the form an action attribute - a page to go to 
+                      when the form is submitted: loginHistory.html -->
+            <form class="auth-form"  action="loginHistory.html" method="post">
+
+                <!-- When you style this div, the form will change from single to two column -->
+                <!-- one HTML element or text node to a grid cell - each row needs two items -->
+                <div class="form-input-grid">
+                    <!-- Row 1: username label and input -->
+                    <label for="uname">Username</label>
+                    <input type="text" id="uname" name="uname" />
+
+                    <!-- Row 2: password label and input -->
+                    <!-- HTML TO DO 2: add password label and input 
+                              Be sure the label is *for* the input -->
+                  <label for="password">password</label>
+                  <input type = "password" id="password" name="password" />
+
+                </div>
+                <div class="align-right">
+                    <!-- HTML TO DO 3: add a form submit button -->
+                 <input type ="submit" value="Login" />
+                </div>
+            </form>
+            <div class="form-note">
+                <!-- HTML TO DO 4: add a link to the signup page -->
+                 <a href ="signup.html">Don't have and account?Sing UP</a>
+
+            </div>
+        </main>
+        <footer id="footer-auth">
+            <p class="footer-text">CS 215: Lab 3 Solution</p>
+        </footer>
+    </div>
+</body>
+
+</html>

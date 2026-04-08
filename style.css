@@ -1,0 +1,310 @@
+/* 
+    Common CSS styles for all the files begins
+*/
+
+/* CSS TO DO 1: Manrope and Outfit are a web delivered Google Fonts we want to use for body text and headers. 
+                Find them on https://fonts.google.com/
+                and CSS @import them here
+*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px;
+}
+
+
+h1, h2, h3, h4,h5 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    color: #7474C1;
+    margin-bottom: .5em;
+}
+
+h1 {
+    color: #ffc82e;
+    font-weight: 100;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.55em;
+}
+
+/* 
+    Common CSS styles for all the files ends
+*/
+
+
+
+/* 
+    CSS styles for Login and Signup pages begins
+*/
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 150px auto 100px;
+    grid-gap: 5px;
+
+    /* vh: viewport height */
+    min-height: 100vh;
+}
+
+
+#header-auth {
+    background-color: #004F2E;
+    color: white;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#header-auth h1 {
+    /* CSS TO DO 2: Use the inspector to find the size of an H1
+                    set this H1 1.5x larger than that */
+
+
+    /* CSS TO DO 3: Align the header text to the center both horizontally and vertically.
+                    Multiple solutions are possible.
+                    You may modify the parent element's CSS too if necessary. 
+    */
+
+    font-size:3em;
+
+    margin: 0;
+}
+
+
+#main-center {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+
+#footer-auth {
+    background-color: black;
+    
+    color: white;
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.auth-form {
+    margin-top: 60px;
+    /* CSS TO DO 4: Make a border around the form with three properties: 
+                    border type, color and, thickness. 
+    */
+
+
+    /* CSS TO DO 5: Make edge of the border rounded. */
+    border: 1px solid #dedede;
+    border-radius: 10px;
+
+
+    padding: 2em;
+}
+
+.form-input-grid {
+    /* CSS TO DO 6: Create a two column grid for the inputs and their labels
+                    Do not set the number of rows! The rows will auto fill and the same style
+                    will apply to Login and Signup forms!
+                    First column is for labels and should fit labels with no extra space
+                    Second column is for inputs and error messages and should fill the remaining space
+    */
+
+    
+    /* CSS TO DO 7: Set appropriate gaps between rows and columns - not too big or small.
+                    Experiment with different values until you get a pleasing result. 
+    */
+display: grid;
+grid-template-columns: auto 1fr;
+row-gap: 15px;
+column-gap: 15px;
+
+}
+
+
+/* CSS TO DO 8: Create a rule for the submit button div so that the submit button aligns to the right*/
+
+.align-right{
+    text-align: right;
+}
+
+
+
+/* CSS TO DO 9: Create a rule for the submit button 
+                to add good looking padding and margins. 
+*/
+input[type="submit"]{
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.form-note {
+    /* CSS TO DO 10: Add margins or padding to the form note rule so that the notes below the 
+                     login and signup forms line up with the labels inside the form. 
+    */
+margin-left: 0;
+padding-left: 0;
+margin-top: 15px;
+
+}
+
+.footer-text {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+/* 
+    CSS styles for Login and Signup pages ends
+*/
+
+
+/* 
+    CSS styles for loginHistory.html begins
+*/
+#container-login-history {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 150px auto 100px;
+    grid-gap: 5px;
+
+    min-height: 100vh;
+}
+
+
+#header-login-history {
+    background-color: #004F2E;
+    color: white;
+    grid-column: 1/5;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#header-login-history > * {
+    width: 100%;
+    text-align: center;
+}
+
+
+#user-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+
+#login-sessions {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+
+
+#footer-login-history {
+    background-color: black;
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.button-style-link-1 {
+    font-size: 15px;
+    color: white;
+    background-color: #009A44;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 7px;
+
+}
+
+#header-login-history h1 {
+    font-size: 3em;
+}
+.button-style-link-2 {
+    /* CSS TO DO 11: Add necessary styles for the "Edit" link 
+                     to make it look like a button (see the reference photo) 
+    */
+display: inline-block;
+margin-top: 10px;
+padding: 7px 15px;
+background-color: #7474C1;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 14px;
+
+
+}
+
+
+img {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+
+section {
+    width: 100%;
+    color: #34495E;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+aside {
+    width: 100%;
+}
+
+#user-data {
+    padding: 0px 0px 30px 20px;
+    margin: 20px 0px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+.session {
+    margin: 10px 0px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    color: #34495E;
+    margin-left: 17px;
+    padding-left: 10px;
+}
+
+/* 
+    CSS styles for loginHistory.html ends
+*/
